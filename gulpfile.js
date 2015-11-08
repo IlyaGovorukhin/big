@@ -38,6 +38,13 @@ gulp.task('less', function() {
 
 
     });
+// font
+
+gulp.task('font', function() {
+    gulp.src('app/font/*')
+
+
+});
 
 
 
@@ -65,7 +72,7 @@ gulp.task('less', function() {
             .pipe(jade({
             pretty: true
         }))  // Собираем Jade только в папке app
-            .pipe(gulp.dest('dist/'))
+            .pipe(gulp.dest('dist/'));
 
         // js
         gulp.src('app/js/*.js')
@@ -76,7 +83,11 @@ gulp.task('less', function() {
         // image
         gulp.src('app/img/*')
             .pipe(imagemin())
-            .pipe(gulp.dest('dist/img'))
+            .pipe(gulp.dest('dist/img'));
+
+        // шрифт
+        gulp.src('app/font/*')
+            .pipe(gulp.dest('dist/font'));
 
     });
 

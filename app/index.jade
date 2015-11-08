@@ -1,26 +1,98 @@
-doctype html
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-html
-    head
-        meta(http-equiv = 'Content-Type', content = 'text/html; charset=utf-8')
-        meta(http-equiv='X-UA-Compatible', content="IE=edge,chrome=1")
-        block title
-            title Page Title
-        meta(name='viewport' content='width=device-width')
-        link(rel='stylesheet' type='text/css' href='/css/main.css' media='screen, projection, print')
-    body
-        <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-        .wrapper
-            .container
+extends layout
+block title
+    title Page1
+block content
+     .page
+        .page-wrapper1
+            .page-wrapper1_content1
+                .page-wrapper1_content1_text_er1 Радио Английского Языка
+                .page-wrapper1_content1_button Слушать!
+                .page-wrapper1_content1_doun
+                .page-wrapper1_content1_box
+                    .page-wrapper1_content1_box_wrapper
+                        .page-wrapper1_content1_text Online English course
+        .page-wrapper2
+            .page-wrapper2_content2
+                div#slidorion.slidorion
+                    .slider
+                        .slide
+                            img(src="img/1point.png").slider1
+                        .slide
+                            img(src="img/3point.png").slider1
+                        .slide
+                            img(src="img/2point.png").slider1
 
-        script.
-            window.jQuery || document.write('<script src="/js/_vendor/jquery-1.11.0.min.js"><\/script>');
-        script(src = "js/jquery.min.js")
+                    .accordion
+                        .header Online English course
+                        .content Это эффективное изучение английского языка в короткие сроки с помощью передовых технологий, уникального набора материалов и заданий.
+                        .header Кому необходим этот онлайн курс
+                        .content
+                            p Людям которые испытывают большие сложности с запоминанием различных слов и предложений.
+                            p Тем, кто желает быстро овладеть английским языком
+                            p Тем, кто хочет изучить английский язык с помощью передовых технологий
+                            p Тем, кто сомневается в своих способностях и силах
+                        .header В чем польза English course
+                        .content
+                             p Вы забудете о нудных и бесконечных зубрежках
+                             p Вы освоите просто и легко в игровой форме все уровни изучения языка
+                             p Вы сможете запросто изучать столько языков, сколько необходимо
+                             p Вам не придется тратить деньги на языковые курсы или репетиторов
+                             p Вы сможете читать книги или смотреть фильмы, не дожидаясь перевода
+                             p Вы сэкономите большое количество денег и времени
+                             p Вы докажете своим знакомым преимущество знания иностранного языка
+                             p Вы легко продвинетесь по карьерной лестнице, если иностранный язык нужен Вам для работы
+                             p Вы получите свободное общение с иностранцами посещая другие государства
+                             p .....................
+
+
+
+                .page-wrapper2_content2-button-All
+                    .page-wrapper2_content2-button Зарегистрироваться
+                    .page-wrapper2_content2-button2 Вход
+        .page-wrapper3
+            .page-wrapper3_content3
+                .page-wrapper3_content3-r
+                    .page-wrapper3_content3-r-p1 чо такое?
+                    .page-wrapper3_content3-r-p2 Online English course
+                    .page-wrapper3_content3-r-p3 Это интерактивное интернет ситема, которая собрала в себя все самые эффективные методики комплексного подхода к быстрому и легкому изучению любого иностранного языка в кратчайшие сроки.
+                    .page-wrapper3_content3-r-b Видео
+                .page-wrapper3_content3-l
+                    iframe( width="630" height="500" src="https://www.youtube.com/embed/Le9kRpcTMpY?showinfo=0" frameborder="0" allowfullscreen showinfo=0 )
+
+
+        .pege-wrapper4
+            .page-wrapper4_content4
+                .page-wrapper4_content4-foto
+                    .page-wrapper4_content4-foto-text Отзовы о курсе Online English course
+                ul.page-wrapper4_content4-wrap.clearfix
+                    li.page-wrapper4_content4-el.clearfix
+                        .page-wrapper4_content4-el-ut
+                            iframe(width="300" height="300" src="https://www.youtube.com/embed/mvNgIg9PZz0?showinfo=0" frameborder="0" allowfullscreen )
+                        .page-wrapper4_content4-el-text Анна. 24 года. Тренер по детскому фитнесу.  Прошла курс летом 2015 года. Ссылка на Instagram
+                        a(href="#").page-wrapper4_content4-el-a Вконтакте
+                    li.page-wrapper4_content4-el.clearfix
+                        .page-wrapper4_content4-el-ut
+                            iframe(width="300" height="300" src="https://www.youtube.com/embed/97zqy5N5qr0?showinfo=0" frameborder="0" allowfullscreen showinfo=0)
+                        .page-wrapper4_content4-el-text Николой. 32 года. Заслужаный свиноеб России. Прошел курс зимой 2016 года. Ссылка на Вконтакте
+                        a(href="#").page-wrapper4_content4-el-a Вконтакте
+                    li.page-wrapper4_content4-el.clearfix
+                        .page-wrapper4_content4-el-ut
+                            iframe(width="300" height="300" src="https://www.youtube.com/embed/VBCh7Lr_y8c?showinfo=0" frameborder="0" allowfullscreen showinfo=0)
+                        .page-wrapper4_content4-el-text Эдуард. 54 года. Маньяк педофил, рецедевист. Прошел курс летом 2015 года. Ссылка на Вконтакте
+                        a(href="#").page-wrapper4_content4-el-a Вконтакте
+         .pege-wrapper5
+             .page-wrapper5_content5
+                 .page_form-block
+                     .page_form-block-1 Написать письмо
+                     .page_form-block-2 Обратная связь
+                 .page_form_input
+                     input(placeholder="Имя*").page_form_input-input
+                     input(placeholder="Email*").page_form_input-input
+                     input(placeholder="Телефон").page_form_input-input
+                 textarea.page_form-textarea
+                 a(href="#").page_form-buttom
+                     .page_form-buttom-text Отправить
+                 .page_form-text Поля отмеченные *-обязательны
 
 
 

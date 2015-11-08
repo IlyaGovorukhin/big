@@ -1,0 +1,125 @@
+@import "mixins";
+@import "font";
+
+
+.header {
+  width: 100%;
+  height: 70px;
+  z-index:0;
+  background: #181818;
+
+}
+
+.header_wraper1 {
+  width: 1660px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header_wraper2 {
+
+  width: 1660px;
+  height: 140px;
+  background: #181818;
+  position: fixed;
+  z-index: 9999;
+  -webkit-box-shadow: 0px 18px 69px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 18px 69px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 18px 69px 0px rgba(0,0,0,0.75);
+  transition: all 0.4s ease;
+
+
+}
+.logo-a {
+  display: block;
+  width: 270px;
+  height: 50px;
+  float: left;
+  margin: 30px 200px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.4s ease;
+  &:after {
+    content: 'Radio English';
+    position: absolute;
+    left: -25%;
+    top: 50%;
+    .u20db;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+}
+.sticky-ul {
+  margin: -10px 50px !important;
+  transition: all 0.4s ease !important;
+}
+
+
+.sticky-a {
+  margin: 5px 200px;
+  transition: all 0.4s ease;
+}
+
+
+.sticky {
+  height: 70px;
+  transition: all 0.4s ease;
+}
+
+
+
+.header_wraper-ul {
+  display: block;
+  margin: 20px 50px;
+  float: right;
+  transition: all 0.4s ease;
+}
+
+.header_wraper-li {
+  .inlineblock;
+  margin: 20px 20px;
+  transition: all 0.4s ease;
+}
+
+.social_vk, .social_fb, .social_t, .social_m {
+  display: block;
+  width: 50px;
+  height: 50px;
+  &:hover {
+    transform: rotateZ(-360deg) scale(1.3);
+    -webkit-transform: rotateZ(-360deg) scale(1.3);
+    -o-transform:rotateZ(-360deg) scale(1.3);
+    -moz-transform:rotateZ(-360deg) scale(1.3);
+    transition:transform .3s linear;
+    -moz-transition:transform .3s linear;
+    -webkit-transition:transform .3s linear;
+    -o-transition:transform .3s linear;
+  }
+
+}
+
+
+.social_vk {
+  background: url("../img/VK.png") no-repeat;
+  background-size: contain;
+
+}
+
+.social_fb {
+  background: url("../img/f.png") no-repeat;
+  background-size: contain;
+}
+
+.social_t {
+  background: url("../img/t.png") no-repeat;
+  background-size: contain;
+}
+
+.social_m {
+  background: url("../img/e.png") no-repeat;
+  background-size: contain;
+}
+
