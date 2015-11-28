@@ -24,7 +24,7 @@ gulp.task('less', function() {
 
 // JS
     gulp.task('js', function() {
-        gulp.src('app/js/*.js')
+        gulp.src('app/js/*.*')
 
 
     });
@@ -46,7 +46,11 @@ gulp.task('font', function() {
 
 });
 
+gulp.task('audio', function() {
+    gulp.src('app/audio/*')
 
+
+});
 
 // Запуск сервера разработки gulp watch
     gulp.task('watch', function() {
@@ -75,7 +79,7 @@ gulp.task('font', function() {
             .pipe(gulp.dest('dist/'));
 
         // js
-        gulp.src('app/js/*.js')
+        gulp.src('app/js/*.*')
             .pipe(gulp.dest('dist/js'));
 
 
@@ -88,6 +92,9 @@ gulp.task('font', function() {
         // шрифт
         gulp.src('app/font/*')
             .pipe(gulp.dest('dist/font'));
+
+        gulp.src('app/audio/*')
+            .pipe(gulp.dest('dist/audio'));
 
     });
 

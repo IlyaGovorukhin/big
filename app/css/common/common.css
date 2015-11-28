@@ -162,6 +162,35 @@
 .page-wrapper1_content1:after {
   clear: both;
 }
+.page-wrapper1_content1_audio {
+  position: absolute;
+  width: 500px;
+  height: 377px;
+  top: 46%;
+  left: 70%;
+  margin: -225px 0 0 -225px;
+  opacity: 0;
+}
+.page-wrapper1_content1_audio1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../img/iphone6.png");
+}
+#wraper_audio {
+  position: absolute;
+  bottom: 1px;
+  left: 21%;
+}
+.expand {
+  opacity: 1;
+}
+p.wraperp {
+  float: left;
+}
+p.wraperp2 {
+  float: right;
+}
 .page-wrapper1_content1_box {
   position: absolute;
   left: -2px;
@@ -242,7 +271,8 @@
   border-radius: 25px;
   line-height: 47px;
   text-align: center;
-  color: #FFFFFF;
+  background: #FFFFFF;
+  color: #33aae7;
   margin-left: 230px;
   margin-top: 54px;
   text-transform: uppercase;
@@ -250,8 +280,8 @@
   cursor: pointer;
 }
 .page-wrapper1_content1_button:hover {
-  background: #FFFFFF;
-  color: #33aae7;
+  background: #33aae7;
+  color: #FFFFFF;
 }
 .page-wrapper1_content1_doun {
   display: block;
